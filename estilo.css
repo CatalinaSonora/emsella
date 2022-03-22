@@ -83,43 +83,72 @@ h3 {
     }
 
   /* Menú */
-
-#logo {
-  width: 250;
-  height: 250px;
+header {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F7F7F7;
+  height: 25vh;
 }
 
-#menu {
-  font-size: 13pt;
-  font-weight: bold;
+header img {
+  width: 300px;
+  height: auto;
+}
+
+nav#navbar {
+  font-size: 10pt;
   font-family: 'Inter', sans-serif;
-  letter-spacing: 1.5pt;
-  overflow: hidden;
-  height: 150px;
-  background-color: rgba(178,197,206,0.4);
-  width: 100%;
-  
-  
-}
-a {
-
-  color: #F7F7F7;
-  list-style: none;
-  text-decoration: none;
-}
-
-li {
-
-  list-style: none;
-}
-
-.sticky {
-  position: fixed;
+  background: #06517B;
   top: 0;
+  position: relative;
   width: 100%;
+  transition: all 0.5s linear;
+  z-index: 1;
+  
+}
+ul.menu-list {
+  display: flex;
+  list-style: none;
+ 
+}
+ul.menu-list li {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px ;
+}
+ul.menu-list li.logo {
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.logo > a > img {
+  max-width: 80px;
+}
+ul.menu-list li.logo > a {
+  color:#011D2D;
 }
 
+ul.menu-list li > a {
+  text-decoration: unset;
+  display: flex;
+  color: #fff;
+  transition: 0.2s linar;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  
+}
+body.fixed-nav nav#navbar {
+  position: fixed;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+}
+body.fixed-nav li.logo {
+  max-width: 300px;
+}
 
 /* Inicio */
 
@@ -137,15 +166,16 @@ li {
 #inicio img {
 
    
-  width: 780px;
+  width: 700px;
   height: auto;
-  border-radius: 30%;
+  
+  /* border-radius: 30%; */
   
 }
 
 #inicio p {
 
-  font-size: 14pt;
+  font-size: 12 pt;
   line-height: 33pt;
   font-size: 18pt;
   
@@ -287,14 +317,12 @@ input[type=text]:focus, textarea:focus {
 
 /* footer */
 
-#footer h1 {
 
-  padding: 30px;
-  color: white;
-  text-align: center;
-}
 
 #footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 300px;
   background-color: #B2C5CE;
 }
