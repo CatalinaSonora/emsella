@@ -7,39 +7,44 @@ $(document).ready(function () {
         console.log ('clickee')
 
         let email = $('.email').val()
-        let persona = $('.persona').val()
+        let nombre = $('.nombre').val()
+        let apellido = $('.apellido').val()
         let mensaje = $('.mensaje').val()
         let statusElm = $('.status')
+
         statusElm.empty()
 
         if(email.length > 5 && email.includes('@') && email.includes('.')) {
-            statusElm.append('<div>Email Valido</div>')
+           
             
         } else {
 
             event.preventDefault()
-            statusElm.append('<div>Email no Valido</div>')
+            statusElm.append('<div id="validacion">Por favor, ingrese un E-Mail válido.</div>')
             
         }
 
-        if(persona.length > 5) {
-            statusElm.append('<div>Email Valido</div>')
+        if(nombre.length >= 2) {
+            
         } else {
             event.preventDefault()
-            statusElm.append('<div>Email no Valido</div>')
+            statusElm.append('<div id="validacion">Por favor, ingrese un nombre válido.</div>')
         }
 
-        if(mensaje.length > 5) {
-            statusElm.append('<div>Email Valido</div>')
+        if(mensaje.length >= 5) {
+            
         } else {
             event.preventDefault()
-            statusElm.append('<div>Email no Valido</div>')
+            statusElm.append('<div id="validacion">Por favor, ingrese al menos 5 caractéres.</div>')
         }
 
         
     })
 })
 
+if ($('.enviar') = true {
+    statusElm.append('<div id="validacion">Formulario enviado con éxito..</div>')
+}
 
 const nav = document.querySelector("#navbar");
 const NavTop = nav.offsetTop;

@@ -45,27 +45,18 @@
     /* titulos  */
 
     h1 {
-      font-size: 27pt;
+      font-size: 28pt;
       text-transform: uppercase;
       letter-spacing: 2pt;
       font-weight: bold;
-      padding: 25px;
+      text-align: right;
       color: #12344d;
       
     
     }
 
 
-h2 {
-  text-align: center;
-  font-size: 18pt;
-  padding: 18px;
-  background-color: #06517B;
-  color: #F7F7F7;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2pt;
-}
+
 
 h3 {
 
@@ -77,10 +68,16 @@ h3 {
 
     span {
 
-      background-color: #F7EF94;
-      padding: 3px;
+     color: #09C3F1;
+      
       font-weight: bold;
     }
+
+    hr {
+      color: #09C3F1;
+      
+    }
+
 
   /* Menú */
 header {
@@ -160,10 +157,18 @@ body.fixed-nav li.logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(img/elemento0.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 900px;
+  
+
+  
+ 
  
 }
 
-#inicio img {
+.emsella img {
 
    
   width: 700px;
@@ -173,14 +178,52 @@ body.fixed-nav li.logo {
   
 }
 
-#inicio p {
+#inicio p{
 
-  font-size: 12 pt;
+  font-size: 12pt;
   line-height: 33pt;
   font-size: 18pt;
   
  
 }
+
+#inicio h2 {
+  text-align: right;
+  font-weight: bold;
+  line-height: 33pt;
+    letter-spacing: 1pt;
+    padding: 18px;
+    font-size: 19pt;
+}
+.beneficios {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 10pt;
+  letter-spacing: 2pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.beneficios img {
+
+  max-width: 130px;
+  height: auto;
+  padding: 10px;
+}
+
+.beneficios p {
+  padding: 10px;
+}
+
+.dedo p {
+
+  padding: 17px;
+}
+
+
 
 
 
@@ -221,29 +264,61 @@ body.fixed-nav li.logo {
 /* Preguntas frecuentes */
 
 
-
+#preguntas {
+ 
+  background-image: url(img/jj.png);
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: 600px;
+  font-size: 13pt;
+ 
+}
 
 .bloque_1 {
 padding: 30px;
 text-align: center;
+
 }
 
 .espacio {
-
-
   padding-top: 25px;
   padding-bottom: 35px;
 }
 
+#preguntas h2 {
+  
+    text-align: center;
+    font-size: 18pt;
+    padding: 18px;
+    background-color: #06517B;
+    color: #F7F7F7;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+  }
 
 /* Contacto */
 
-.contacto {
+#contacto {
 
 padding: 30px;
 text-align: center;
 
+
 }
+
+#contacto h2 {
+  
+    text-align: center;
+    font-size: 18pt;
+    padding: 18px;
+    background-color: #06517B;
+    color: #F7F7F7;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+  }
+
 
 .bloque_2 {
 
@@ -315,6 +390,14 @@ input[type=text]:focus, textarea:focus {
   border: 2px solid #011D2D;
 }
 
+
+#validacion {
+
+  text-align: center;
+  font-weight: italic;
+  font-size: 10pt;
+  padding-top: 15px;
+}
 /* footer */
 
 
