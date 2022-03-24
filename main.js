@@ -42,9 +42,6 @@ $(document).ready(function () {
     })
 })
 
-if ($('.enviar') = true {
-    statusElm.append('<div id="validacion">Formulario enviado con éxito..</div>')
-}
 
 const nav = document.querySelector("#navbar");
 const NavTop = nav.offsetTop;
