@@ -1,5 +1,23 @@
 
+const nav = document.querySelector("#navbar");
+const NavTop = nav.offsetTop;
 
+function fixnavbar(){
+  if(window.scrollY >= NavTop){
+    document.body.style.paddingTop = nav.offsetHeight + "px";
+    document.body.classList.add("fixed-nav");
+  }else {
+    document.body.style.paddingTop = 0;
+    document.body.classList.remove("fixed-nav");
+  }
+}
+
+window.addEventListener("scroll", fixnavbar);
+
+
+document.getElementById("boton").onclick = function () {
+  location.href = "https://wa.me/59892900020";
+};
 
 $(document).ready(function () {
     $('.enviar').click(function (event){
@@ -43,16 +61,3 @@ $(document).ready(function () {
 })
 
 
-const nav = document.querySelector("#navbar");
-const NavTop = nav.offsetTop;
-
-function fixnavbar(){
-  if(window.scrollY >= NavTop){
-    document.body.style.paddingTop = nav.offsetHeight + "px";
-    document.body.classList.add("fixed-nav");
-  }else {
-    document.body.style.paddingTop = 0;
-    document.body.classList.remove("fixed-nav");
-  }
-}
-window.addEventListener("scroll", fixnavbar);
