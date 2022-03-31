@@ -216,6 +216,7 @@ body.fixed-nav li.logo {
   align-items: center;
   text-align: center;
   padding: 30px;
+  
 
 }
 
@@ -854,3 +855,192 @@ text-align: center;
 }
     
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  {
+
+    #menuResponsive {
+      visibility: visible;
+      display: flex;
+      width: 100%;
+      text-align: center;
+      
+    
+
+    }
+    
+   .navbar-brand {
+     width: 50%;
+   }
+    #menuItems a {
+      
+      background-color: #06517B;
+      color: #F7F7F7;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 15px;
+      
+    }
+    
+    #inicio {
+      text-align: center;
+    }
+      #inicio img {
+        width: 100%;
+        height: auto;
+  text-align: center;
+      
+      }
+      
+      
+      #inicio p{
+      
+        font-size: 1rem;
+        line-height: 22pt;
+        text-align: center;
+        padding: 20px;
+        
+      }
+      
+      #inicio h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      
+      #inicio h2 {
+        text-align: center;
+        font-weight: bold;
+        line-height: 22pt;
+          letter-spacing: 1pt;
+          padding: 15px;
+          font-size: 1.2rem;
+      }
+      
+      
+      #inicio_2  {
+        display: none;
+        visibility: none;
+      }
+      
+      #inicio_2 p {
+       font-size: 1rem;
+      line-height: 22pt;
+      text-align: center;
+      padding: 20px;
+     
+      
+        }
+        #inicio_2 h2 {
+          text-align: center;
+          font-weight: bold;
+          
+            letter-spacing: 1pt;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+
+
+    .beneficios {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 25px;
+      font-weight: bold;
+      font-size: 0.8rem;
+      letter-spacing: 2pt;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    
+    .beneficios img {
+    
+      max-width: 150px;
+      height: auto;
+      
+    }
+    
+    
+    .beneficios h2 {
+    
+      text-align: center;
+        font-size: 2rem;
+        padding: 20px;
+        color: #011D2D;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 8pt;
+    }
+    
+    .beneficios p {
+    
+      text-align: center;
+        font-size: 1rem;
+        padding: 20px;
+        color: #011D2D;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2pt;
+    }
+    
+    
+    .beneficios h3{
+    
+      text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+        color: #011D2D;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2pt;
+        line-height: 20pt;
+    }
+
+    #preguntas {
+ 
+      background-image: url(img/jj.png);
+      background-repeat: no-repeat;
+      background-position:  center;
+      background-size: 600px;
+      font-size: 1rem;
+     
+    }
+    
+    .bloque_1 {
+    padding: 30px;
+    text-align: center;
+    
+    }
+    
+    .espacio {
+      padding-top: 25px;
+      padding-bottom: 35px;
+    }
+    
+    #preguntas h2 {
+      
+        text-align: center;
+        font-size: 2rem;
+        color: #011D2D;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 8pt;
+        
+      }
+      #preguntas h3{
+      
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 20px;
+        color: #011D2D;
+        font-weight: bold;
+        
+        
+      }
+    
+      
+    
+  }
