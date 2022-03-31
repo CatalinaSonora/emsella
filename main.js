@@ -1,3 +1,8 @@
+AOS.init({
+  duration: 1000,
+  once: false, 
+  mirror: true,
+});
 
 const nav = document.querySelector("#navbar");
 const NavTop = nav.offsetTop;
