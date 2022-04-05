@@ -139,7 +139,7 @@ ul.menu-list li.logo > a {
   color:#011D2D;
 }
 
-i {
+.logo i {
   padding: 15px 30px 15px 30px;
   color: #F7F7F7;
   
@@ -471,7 +471,7 @@ input[type=text]:focus, textarea:focus {
 }
 /* footer */
 
-
+/* 
 #footer {
   bottom: 0;
   width: 100%;
@@ -494,9 +494,102 @@ font-size: 1rem;
 font-weight: bold;
 letter-spacing: 2pt;
 line-height: 20px;
+ */
+
+#footer img {
+  max-width: 300px;
+
+}
+#footer {
+   background-color: #12344d;
+   color: #F7F7F7;
+   
 
 }
 
+#footer i {
+  color: white;
+  text-align: center;
+  padding: 30px;
+
+
+
+}
+
+#footer p {
+  text-align: center;
+
+  font-size: 0.9rem;
+
+}
+#footer h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#footer h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.ubicacion {
+  padding: 20px;
+}
+
+iframe {
+  padding-top: 25px;
+}
+
+.aparece {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.aparece.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.flip {
+  position: relative;
+  opacity: 0;
+  transition: all 2s ease ;
+}
+
+.flip.active_2 {
+
+opacity: 1;
+
+	-webkit-animation: flip 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+
+}
+
+
+ @-webkit-keyframes flip {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+}
+@keyframes flip{
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+}
 
 @media only screen and (max-width: 768px) {
     

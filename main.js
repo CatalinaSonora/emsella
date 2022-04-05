@@ -24,6 +24,42 @@ document.getElementById("boton").onclick = function () {
   location.href = "https://wa.me/59892900020";
 };
 
+window.addEventListener('scroll', aparece);
+function aparece () {
+  let aparecer = $('.aparece')
+  for(let i = 0; i<aparecer.length; i++){
+    let windowheight = window.innerHeight;
+    let aparecetop = aparecer[i].getBoundingClientRect().top;
+    let aparecepoint = 150;
+
+    if(aparecetop < windowheight - aparecepoint){
+      aparecer[i].classList.add('active');
+
+    } 
+    else {
+      aparecer[i].classList.remove('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', flip);
+function flip () {
+  let flip = $('.flip')
+  for(let i = 0; i<flip.length; i++){
+    let windowheight = window.innerHeight;
+    let aparecetop = flip[i].getBoundingClientRect().top;
+    let aparecepoint = 150;
+
+    if(aparecetop < windowheight - aparecepoint){
+      flip[i].classList.add('active_2');
+
+    } 
+    else {
+      flip[i].classList.remove('active_2');
+    }
+  }
+}
+
 $(document).ready(function () {
     $('.enviar').click(function (event){
         event.preventDefault()
@@ -43,7 +79,9 @@ $(document).ready(function () {
         } else {
 
             event.preventDefault()
-            statusElm.append('<div id="validacion">Por favor, ingrese un E-Mail válido.</div>')
+            $(document).ready(function() {
+              $(".email").css("border", "2px solid #b80d1b");
+          });
             
         }
 
@@ -51,16 +89,20 @@ $(document).ready(function () {
             
         } else {
             event.preventDefault()
-            statusElm.append('<div id="validacion">Por favor, ingrese un nombre válido.</div>')
+            $(document).ready(function() {
+              $(".nombre").css("border", "2px solid #b80d1b");
+          });
         }
 
         if(mensaje.length >= 5) {
             
         } else {
             event.preventDefault()
-            statusElm.append('<div id="validacion">Por favor, ingrese al menos 5 caractéres.</div>')
+            $(document).ready(function() {
+              $(".mensaje").css("border", "2px solid #b80d1b");
+          });
         }
-
+        
         
     })
 })
