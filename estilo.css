@@ -76,7 +76,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #F7F7F7;
   color: #011D2D;
-  padding: 15px;
+  
   background-image: url(img/fondo.png);
   background-repeat: repeat;
 
@@ -89,8 +89,8 @@ body {
 }
 
 main {
-  padding-top: 80px;
-  padding-bottom: 80px;
+ padding: 80px 10px  10px 80px
+
 }
 
 
@@ -301,7 +301,7 @@ body.fixed-nav li.logo {
 
 #inicio_2 img {
 
-  width: 300px;
+ max-width: 80%;
   height: auto;
 
 
