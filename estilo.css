@@ -99,7 +99,7 @@ main {
 /* Títulos  */
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   letter-spacing: 2pt;
   font-weight: bold;
@@ -707,8 +707,9 @@ textarea:focus {
   }
 
   #menuResponsive img {
-    height: 150px;
+    height: auto;
     width: 100%;
+    padding: 25px;
   }
 
   #menuItems a {
@@ -768,7 +769,7 @@ textarea:focus {
 
   #inicio p {
 
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 30pt;
     text-align: center;
     padding: 20px;
@@ -778,6 +779,7 @@ textarea:focus {
 
   #inicio h1 {
     text-align: center;
+    font-size: 2rem;
   }
 
   #inicio h2 {
@@ -786,7 +788,7 @@ textarea:focus {
     line-height: 33pt;
     letter-spacing: 1pt;
     padding: 15px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
 
@@ -799,7 +801,7 @@ textarea:focus {
 
   #inicio_2 p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 30pt;
     padding: 20px;
 

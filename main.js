@@ -60,51 +60,5 @@ function flip () {
   }
 }
 
-$(document).ready(function () {
-    $('.enviar').click(function (event){
-        event.preventDefault()
-        console.log ('clickee')
-
-        let email = $('.email').val()
-        let nombre = $('.nombre').val()
-        let apellido = $('.apellido').val()
-        let mensaje = $('.mensaje').val()
-        let statusElm = $('.status')
-
-        statusElm.empty()
-
-        if(email.length > 5 && email.includes('@') && email.includes('.')) {
-           
-            
-        } else {
-
-            event.preventDefault()
-            $(document).ready(function() {
-              $(".email").css("border", "2px solid #b80d1b");
-          });
-            
-        }
-
-        if(nombre.length >= 2) {
-            
-        } else {
-            event.preventDefault()
-            $(document).ready(function() {
-              $(".nombre").css("border", "2px solid #b80d1b");
-          });
-        }
-
-        if(mensaje.length >= 5) {
-            
-        } else {
-            event.preventDefault()
-            $(document).ready(function() {
-              $(".mensaje").css("border", "2px solid #b80d1b");
-          });
-        }
-        
-        
-    })
-})
 
 
