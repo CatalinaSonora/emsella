@@ -707,7 +707,7 @@ textarea:focus {
   }
 
   #menuResponsive img {
-    height: auto;
+   max-height: 180px;
     width: 100%;
     padding: 25px;
   }
@@ -1028,6 +1028,7 @@ textarea:focus {
   main {
     padding: 0px 0px  0px 0px;
     overflow: hidden;
+    padding-top: 30px;
     
    
    }
@@ -1038,13 +1039,14 @@ textarea:focus {
     display: flex;
     width: 100%;
     text-align: center;
+    
 
 
 
   }
 
   #menuResponsive img {
-    height: 180px;
+    max-height: auto;
     width: 100%;
   }
 
@@ -1066,6 +1068,7 @@ textarea:focus {
 
   #inicio {
     text-align: center;
+    
   }
 
   #inicio img {
