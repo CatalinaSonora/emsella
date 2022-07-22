@@ -396,7 +396,7 @@ video {
 
 
 
-.beneficios h2 {
+.beneficios h1 {
 
   text-align: center;
   font-size: 2 rem;
@@ -404,7 +404,7 @@ video {
   color: #011D2D;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 12pt;
+  letter-spacing: 6pt;
 }
 
 /* Preguntas Frecuentes */
@@ -430,7 +430,7 @@ video {
   padding-bottom: 35px;
 }
 
-#preguntas h2 {
+#preguntas h1 {
 
   text-align: center;
   font-size: 2 rem;
@@ -438,7 +438,7 @@ video {
   color: #011D2D;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 12pt;
+  letter-spacing: 6pt;
 }
 
 #preguntas a {
